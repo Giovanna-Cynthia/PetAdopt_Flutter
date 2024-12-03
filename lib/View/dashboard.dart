@@ -68,18 +68,19 @@ class Dashboard extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0, vertical: 10.0),
-                    child: TextField(
-                      controller: senhaController,
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
-                        labelText: 'Senha',
-                        labelStyle: TextStyle(
-                            color: const Color.fromARGB(
-                                255, 0, 0, 0)), // Cor do rótulo
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      child: TextField(
+                        obscureText: true, // Para ocultar a senha
+                        decoration: const InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20))),
+                          labelText: 'Senha',
+                          labelStyle: TextStyle(
+                              color: Color.fromARGB(
+                                  255, 0, 0, 0)), // Cor do texto do rótulo
+                        ),
                       ),
                     ),
                   ),

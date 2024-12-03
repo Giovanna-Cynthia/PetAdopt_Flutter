@@ -84,11 +84,7 @@ class CadastroPet extends StatelessWidget {
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'Idade',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
+                    
                   ),
                 ),
               ),
